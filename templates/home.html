@@ -1,16 +1,8 @@
+{% extends 'base.html' %}
 {% load static %}
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project 4</title>
-</head>
-<body>
-    <h1>this is project 4 of django</h1>
-    <img src="{%static 'bird1.jpeg' %}" alt="bird1">
-    <h2>this one is bird from canada</h2>
-</body>
-</html>
+{% block content %}
+{{block.super}}
+<h1>this is home page</h1>
+<img src="{%static 'bird1.jpeg' %}" alt="bird1">
+{% endblock %}
